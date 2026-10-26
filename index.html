@@ -47,50 +47,106 @@
 
 
     <section class="perks">
-    <div class="perk" href="shipping.html">
-        <span class="perk-icon">
-            <svg viewBox="0 0 24 24"><path d="M3 6h11v10H3zM14 9h4l3 3v4h-7zM7 19a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM17 19a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"/></svg>
-        </span>
-        <div class="perk-text">
-            <strong>Free Shipping</strong>
-            <small>On orders over $50</small>
+        <div class="perk" href="shipping.html">
+            <span class="perk-icon">
+                <svg viewBox="0 0 24 24"><path d="M3 6h11v10H3zM14 9h4l3 3v4h-7zM7 19a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM17 19a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"/></svg>
+            </span>
+            <div class="perk-text">
+                <strong>Free Shipping</strong>
+                <small>On orders over $50</small>
+            </div>
         </div>
-    </div>
 
-    <div class="perk" href="returns.html">
-        <span class="perk-icon">
-            <svg viewBox="0 0 24 24"><path d="M20 11a8 8 0 00-14-4M4 4v4h4M4 13a8 8 0 0014 4M20 20v-4h-4"/></svg>
-        </span>
-        <div class="perk-text">
-            <strong>Easy Returns</strong>
-            <small>30-day return policy</small>
+        <div class="perk" href="returns.html">
+            <span class="perk-icon">
+                <svg viewBox="0 0 24 24"><path d="M20 11a8 8 0 00-14-4M4 4v4h4M4 13a8 8 0 0014 4M20 20v-4h-4"/></svg>
+            </span>
+            <div class="perk-text">
+                <strong>Easy Returns</strong>
+                <small>30-day return policy</small>
+            </div>
         </div>
-    </div>
 
-    <div class="perk" href="quality.html">
-        <span class="perk-icon">
-            <svg viewBox="0 0 24 24"><circle cx="12" cy="9" r="5"/><path d="M9 13.5L8 21l4-2 4 2-1-7.5"/></svg>
-        </span>
-        <div class="perk-text">
-            <strong>Quality Guaranteed</strong>
-            <small>Built to last</small>
+        <div class="perk" href="quality.html">
+            <span class="perk-icon">
+                <svg viewBox="0 0 24 24"><circle cx="12" cy="9" r="5"/><path d="M9 13.5L8 21l4-2 4 2-1-7.5"/></svg>
+            </span>
+            <div class="perk-text">
+                <strong>Quality Guaranteed</strong>
+                <small>Built to last</small>
+            </div>
         </div>
-    </div>
 
-    <div class="perk" href="support.html">
-        <span class="perk-icon">
-            <svg viewBox="0 0 24 24"><path d="M4 14v-2a8 8 0 0116 0v2M4 14h3v5H4zM17 14h3v5h-3zM20 19c0 1.5-2 2-5 2"/></svg>
-        </span>
-        <div class="perk-text">
-            <strong>Friendly Support</strong>
-            <small>We're here to help</small>
+        <div class="perk" href="support.html">
+            <span class="perk-icon">
+                <svg viewBox="0 0 24 24"><path d="M4 14v-2a8 8 0 0116 0v2M4 14h3v5H4zM17 14h3v5h-3zM20 19c0 1.5-2 2-5 2"/></svg>
+            </span>
+            <div class="perk-text">
+                <strong>Friendly Support</strong>
+                <small>We're here to help</small>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+<section class="sec" id="new-arrivals">
+    <div class="head">
+        <h2>New Arrivals</h2>
+        <p>Freshly landed livestock and gear, hand-picked for your tank.</p>
+    </div>
+ 
+    <div class="carousel">
+        <button class="arrow prev" aria-label="Previous">&#8249;</button>
+        <div class="track" id="track"></div>
+        <button class="arrow next" aria-label="Next">&#8250;</button> 
+    </div>
+ 
+    <div class="spot">
+        <div class="thumbs" id="thumbs" role="tablist"></div>
+        <div class="panel">
+            <div class="pic" id="pic">
+            </div>
+            <div>
+                <h3 id="dName"></h3>
+
+                <div class="rate">
+                    <span class="stars" id="dStars"></span>
+                    <span id="dScore"></span>
+                    <a href="#" id="dRev"></a>
+                </div>
+
+
+                <p class="desc" id="dDesc"></p>
+
+                <div class="big" id="dPrice"></div>
+
+                <div class="timer" aria-label="Offer ends in">
+                    <div><b id="tD">00</b><small>DAY</small></div>
+                    <div><b id="tH">00</b><small>HRS</small></div>
+                    <div><b id="tM">00</b><small>MIN</small></div>
+                    <div><b id="tS">00</b><small>SEC</small></div>
+                </div>
+
+
+                <div class="buy">
+                    <button class="cart" type="button">Add to cart</button>
+                    <button class="ic heart" type="button" aria-label="Save">&#9825;</button>
+                </div>
+
+
+            </div>
         </div>
     </div>
 </section>
+    
 
 
 
 
-
+<script src="./script.js"></script>
 </body>
 </html>
