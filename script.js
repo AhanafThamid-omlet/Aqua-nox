@@ -71,3 +71,14 @@ document.addEventListener("click",e=>{if(e.target.classList.contains("heart")){e
 
 
 
+
+const links = document.querySelectorAll(".menu a");
+
+links.forEach(link => {
+    link.addEventListener("click", () => {
+        links.forEach(l => l.classList.remove("active"));  // un-select the others
+        link.classList.add("active");                      // select the clicked one
+    });
+});
+
+

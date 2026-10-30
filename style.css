@@ -58,18 +58,29 @@ body{
 .menu a:hover {
     font-weight: 400;
     color:#000000;
-    
+    border-color: currentColor;
+    border-radius: 100px;
 }
 
 .menu a {
+    padding: 8px 18px;
+    border: .2px solid transparent;
+    border-radius: 100px;
     color: #1D1D1F;
     mix-blend-mode: normal;      /* remove the difference blend */
     font-size: 12px;
     font-weight: 200;
     letter-spacing: 0.03em;
     text-decoration: none;
-    
-    /*transition: color .5s;*/
+}
+.menu a.active {
+    background: #000;
+    color: #fff;
+    border-color: #000;
+}
+
+.menu a.active:hover {
+    color: #fff;          /* keeps the text white when hovering the selected link */
 }   
 .contact-links {
     display: flex;
@@ -86,6 +97,11 @@ body{
 .contact-links img:hover {
     transform: scale(1.1);
 }
+
+
+
+
+
 .image-box img {
     width: 100%;
     height: auto;
@@ -136,8 +152,6 @@ html, body {
     padding: 18px 14px;
     border-right: 1px solid #ececec;
 }
-
-.perk:last-child { border-right: none; }
 
 .perk-text strong,.perk-text small {
     overflow-wrap: anywhere;         /* long words wrap instead of being cut off */
@@ -245,6 +259,10 @@ html, body {
         border-right: none;
     }
 }
+
+
+
+
 /*--------------------------------------------------------------------*/
 .sec{
     width:calc(100% - 64px);
