@@ -577,3 +577,19 @@ html, body {
   .arrow{display:none}
   .timer div{width:54px}
 }
+
+
+
+
+
+
+
+/* scrollbar fix for Chrome, Firefox, Edge, Safari */
+* {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+*::-webkit-scrollbar {
+    display: none;
+}
