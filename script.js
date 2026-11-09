@@ -1,10 +1,6 @@
 /*img: your photo path (e.g. "images/Red_and_orange fish.png"); "" shows a placeholder fish
 badge: "new" | "sale" | "" ; old: old price ; rating: 0-5 */
 
-
-
-
-
 const arrivals = [
   {name:"Halfmoon Betta",      price:19.50, badge:"new",  rating:5, img:"images/halfmoon_betta.jpg", color:"#d6336c"},
   {name:"Neon Tetra (6 pack)", price:12.99, old:15.99, badge:"sale", rating:4, img:"images/Neon Tetra.jpg", color:"#27b5e8"},
